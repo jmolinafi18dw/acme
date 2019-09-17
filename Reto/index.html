@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>trabajo web</title>
+	<script type="text/javascript" src="js/cambiarPestanna.js"></script>
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<style type="text/css">
+		body{
+			background-image: url(fondo.jpg);
+			background-size: cover;
+			padding: 0px 0px 0px 0px;
+			margin: 0px 0px 0px 0px;
+		}
+		header ul{
+			list-style: none;
+			padding: 0px 10px 0px 10px;
+			margin: 5px 0px 0px 0px;
+			text-decoration: none;
+			padding-top: 2.5%;
+
+		}
+		header li{
+			width: 13%;
+			float: left;
+			border-right:1px solid grey;
+			font-size: 30px;
+			text-align: center;
+			margin: 0px 10px 0px 10px;
+			text-decoration: none;
+		}
+
+		header a{
+			color: white;
+			text-decoration: none;
+		}
+		
+		header li:hover{
+			background-color: grey;
+		}
+		header{
+			border-bottom:5px solid #E74C3C;
+			height: 80px;
+			margin: 0px 15px 0px 10px;
+		}
+		header img{
+			height: 90%;
+			width: 10%;
+			float: left;
+		}
+		#fecha{
+			color: #E74C3C;
+			font-size: 30px;
+			text-align: center;
+
+		}
+		#Descripcion {
+			margin-top: 8%;
+			margin-left: 25%;
+			width: 50%;
+			color: bisque;
+			text-align: center;
+			font-size: 150%;
+
+		}
+
+		.Temporadas{
+		    width: 925px;
+		    margin: auto;
+		    color: bisque;
+		    padding: 20px 15px 50px 50px;
+		}
+
+		.titulo{
+		    font-size: 3.5ex;
+		    font-weight: bold;
+		    margin-left: 10px;
+		    margin-bottom: 10px;
+		}
+
+		#pestanas {
+		    float: top;
+		    font-size: 3ex;
+		    font-weight: bold;
+		}
+
+		#pestanas ul{
+		    margin-left: -40px;    
+		}
+
+		#pestanas li{
+		    list-style-type: none;
+		    float: left;
+		    text-align: center;
+		    margin: 0px 2px -2px -0px;
+		    background: darkgrey;
+		    border-top-left-radius: 5px;
+		    border-top-right-radius: 5px;
+		    border: 2px solid bisque;
+		    border-bottom: dimgray;
+		    padding: 0px 20px 0px 20px;
+		}
+
+		#pestanas a:link{
+		    text-decoration: none;
+		    color: bisque;
+		}
+
+		#contenidopestanas{
+		    clear: both;  
+		    background: dimgray;
+		    border-radius: 5px;
+		    border-top-left-radius: 0px;
+		    border: 2px solid bisque;
+		    width: 900px;
+		    height: 200px;
+		}
+		#contenidopestanas p{
+			font-size: 130%;
+		}
+		#contenidopestanas img{
+			float: left;
+			margin: 20px;
+			width: 150px;
+			height: 150px;
+
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<img src="logo.jpg">
+		<ul>
+			<li>
+				<a href="#">Actores</a>
+			</li>
+			<li>
+				<a href="#">Temporadas</a>
+			</li>
+			<li>
+				<a href="#">Trailers</a>
+			</li>
+			<li>
+				<a href="#">URLS</a>
+			</li>
+		</ul>
+		<div id="fecha">
+			<script type="text/javascript">
+				var año=new Date();
+				document.write(año.getDay()+ " / " +año.getMonth()+" / "+año.getFullYear()+" hora: "+ año.getHours()+":"+año.getMinutes());
+			</script>
+		</div>
+	</header>
+	<section>
+
+		<div id="Descripcion">
+			<h1>Sipnosis</h1>
+			<p>En una tierra donde los veranos duran décadas y los inviernos pueden durar toda una vida, los problemas acechan. Desde las maquinaciones del sur a las salvajes tierras del este, pasando por el helado norte y el milenario Muro que protege el reino de las fuerzas tenebrosas, dos poderosas familias mantienen un enfrentamiento letal por gobernar los Siete Reinos de Poniente. Mientras la traición, la lujuria y las fuerzas sobrenaturales sacuden los pilares de los Reinos, la sangrienta batalla por el Trono de Hierro tendrá consecuencias imprevistas y trascendentales. El invierno se acerca. Que empiece Juego de Tronos.</p>
+		</div>
+
+		<div class="Temporadas">
+	        <div class="titulo">Temporadas</div>
+
+	        <div id="pestanas">
+	            <ul id=lista>
+	                <li id="pestana1"><a href='javascript:cambiarPestanna(pestanas,pestana1);'>Temporada1</a></li>
+	                <li id="pestana2"><a href='javascript:cambiarPestanna(pestanas,pestana2);'>Temporada2</a></li>
+	            </ul>
+	        </div>
+
+	        <body onload="javascript:cambiarPestanna(pestanas,pestana1);">
+
+	        <div id="contenidopestanas">
+	            <div id="cpestana1">
+	            	<img src="Temporadas/img1.jpg">
+	                <p>Al comienzo de la serie, vemos a Robert Baratheon, Rey de Poniente y antiguo amigo de Ned, llegar a Invernalia para pedir a Ned que se vaya con él a Desembarco del Rey, donde reside junto a su mujer, Cersei Lannister, para convertirse en su consejero.</p>
+	            </div>
+	            <div id="cpestana2">
+	                Contenido de la pestaña 2
+	            </div>
+	    	</div>
+	    </div>
+		<div id="Trailers">
+			<div class="titulo">Trailers</div>
+		</div>
+	</section>
+	
+
+</body>
+</html>
