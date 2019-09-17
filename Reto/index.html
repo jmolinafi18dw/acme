@@ -7,9 +7,11 @@
 	<style type="text/css">
 		body{
 			background-image: url(fondo.jpg);
-			background-size: cover;
-			padding: 0px 0px 0px 0px;
-			margin: 0px 0px 0px 0px;
+			width: 100%;
+			height: 100%;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			background-attachment: fixed;
 		}
 		header ul{
 			list-style: none;
@@ -47,6 +49,18 @@
 			width: 10%;
 			float: left;
 		}
+		#bandera1{
+			width: 12%;
+			height: 250px;
+			float: left;
+			margin-left: 2%;
+		}
+		#bandera2{
+			width: 14%;
+			height: 250px;
+			float: right;
+			margin-right: 2%;
+		}
 		#fecha{
 			color: #E74C3C;
 			font-size: 30px;
@@ -54,16 +68,24 @@
 
 		}
 		#Descripcion {
+			float: left;
 			margin-top: 8%;
-			margin-left: 25%;
-			width: 50%;
+			width: 100%;
 			color: bisque;
 			text-align: center;
 			font-size: 150%;
+			margin-bottom: 8%;
 
 		}
 
-		.Temporadas{
+		#descden{
+			float: left;
+			width: 60%;
+			margin-left: 5%;
+			margin-right: 5%;
+		}
+
+		#Temporadas{
 		    width: 925px;
 		    margin: auto;
 		    color: bisque;
@@ -71,7 +93,7 @@
 		}
 
 		.titulo{
-		    font-size: 3.5ex;
+		    font-size: 30px;
 		    font-weight: bold;
 		    margin-left: 10px;
 		    margin-bottom: 10px;
@@ -124,6 +146,23 @@
 			height: 150px;
 
 		}
+		#Trailers .titulo{
+			text-align: center;
+			color: bisque;
+			font-size: 40px;
+		}
+		#trailer div{
+			float: left;
+			margin-left: 2.5%;
+			text-align: center;
+			color: bisque;
+		}
+		#trailer iframe{
+			width: 290px; 
+			height: 190px;
+		}
+
+
 	</style>
 </head>
 <body>
@@ -151,13 +190,15 @@
 		</div>
 	</header>
 	<section>
-
 		<div id="Descripcion">
-			<h1>Sipnosis</h1>
-			<p>En una tierra donde los veranos duran décadas y los inviernos pueden durar toda una vida, los problemas acechan. Desde las maquinaciones del sur a las salvajes tierras del este, pasando por el helado norte y el milenario Muro que protege el reino de las fuerzas tenebrosas, dos poderosas familias mantienen un enfrentamiento letal por gobernar los Siete Reinos de Poniente. Mientras la traición, la lujuria y las fuerzas sobrenaturales sacuden los pilares de los Reinos, la sangrienta batalla por el Trono de Hierro tendrá consecuencias imprevistas y trascendentales. El invierno se acerca. Que empiece Juego de Tronos.</p>
+			<img src="bandera1.png" id="bandera1">
+			<div id="descden">
+				<h1>Sipnosis</h1>
+				<p>En una tierra donde los veranos duran décadas y los inviernos pueden durar toda una vida, los problemas acechan. Desde las maquinaciones del sur a las salvajes tierras del este, pasando por el helado norte y el milenario Muro que protege el reino de las fuerzas tenebrosas, dos poderosas familias mantienen un enfrentamiento letal por gobernar los Siete Reinos de Poniente. Mientras la traición, la lujuria y las fuerzas sobrenaturales sacuden los pilares de los Reinos, la sangrienta batalla por el Trono de Hierro tendrá consecuencias imprevistas y trascendentales. El invierno se acerca. Que empiece Juego de Tronos.</p>
+			</div>
+			<img src="bandera2.png" id="bandera2">
 		</div>
-
-		<div class="Temporadas">
+		<div id="Temporadas">
 	        <div class="titulo">Temporadas</div>
 
 	        <div id="pestanas">
@@ -181,6 +222,42 @@
 	    </div>
 		<div id="Trailers">
 			<div class="titulo">Trailers</div>
+			<br/>
+			<div id="trailer">
+				<div>
+					<h2>Temporada 1</h2>
+					<iframe src="https://www.youtube.com/embed/BpJYNVhGf1s"  allowfullscreen></iframe>
+				</div>
+				 <div>
+				 	<h2>Temporada 2</h2>
+				 	<iframe src="https://www.youtube.com/embed/L1yassb83ZU"  allowfullscreen></iframe>
+				 </div>
+				 <div>
+				 	<h2>Temporada 3</h2>
+				 	<iframe src="https://www.youtube.com/embed/Y7NgaWZnmW8"  allowfullscreen></iframe>
+				 </div>
+				 <div>
+				 	<h2>Temporada 4</h2>
+				 	<iframe src="https://www.youtube.com/embed/vAkgYzr_Kig"  allowfullscreen></iframe>
+				 </div>
+				 <div>
+					<h2>Temporada 5</h2>
+					<iframe src="https://www.youtube.com/embed/Y0-i5elJlD8"  allowfullscreen></iframe>
+				</div>
+				 <div>
+				 	<h2>Temporada 2</h2>
+				 	<iframe src="https://www.youtube.com/embed/L1yassb83ZU"  allowfullscreen></iframe>
+				 </div>
+				 <div>
+				 	<h2>Temporada 3</h2>
+				 	<iframe src="https://www.youtube.com/embed/Y7NgaWZnmW8"  allowfullscreen></iframe>
+				 </div>
+				 <div>
+				 	<h2>Temporada 4</h2>
+				 	<iframe src="https://www.youtube.com/embed/vAkgYzr_Kig"  allowfullscreen></iframe>
+				 </div>
+ 
+			</div>
 		</div>
 	</section>
 	
