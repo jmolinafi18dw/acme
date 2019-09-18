@@ -13,6 +13,14 @@
 			background-size: 100% 100%;
 			background-attachment: fixed;
 		}
+		@font-face {
+		  font-family: "Wizards";
+		  src: url("Wizards.ttf");
+		}
+		@font-face {
+		  font-family: "Vintage";
+		  src: url("vintage.ttf");
+		}
 		header ul{
 			list-style: none;
 			padding: 0px 10px 0px 10px;
@@ -93,6 +101,7 @@
 		}
 
 		.titulo{
+			font-family: "Vintage";
 		    font-size: 30px;
 		    font-weight: bold;
 		    margin-left: 10px;
@@ -114,22 +123,23 @@
 		    float: left;
 		    text-align: center;
 		    margin: 0px 2px -2px -0px;
-		    background: darkgrey;
+		    background: #2A0303;
 		    border-top-left-radius: 5px;
 		    border-top-right-radius: 5px;
 		    border: 2px solid bisque;
-		    border-bottom: dimgray;
+		    border-bottom: #B44A4A;
 		    padding: 0px 20px 0px 20px;
 		}
 
 		#pestanas a:link{
+			background-color: #2A0303;
 		    text-decoration: none;
 		    color: bisque;
 		}
 
 		#contenidopestanas{
 		    clear: both;  
-		    background: dimgray;
+		    background: black;
 		    border-radius: 5px;
 		    border-top-left-radius: 0px;
 		    border: 2px solid bisque;
@@ -137,7 +147,10 @@
 		    height: 200px;
 		}
 		#contenidopestanas p{
-			font-size: 130%;
+			width: 75%;
+			margin-top: 2%;
+			float: left;
+			font-size: 115%;
 		}
 		#contenidopestanas img{
 			float: left;
@@ -161,7 +174,47 @@
 			width: 290px; 
 			height: 190px;
 		}
+		.tienda {
+			width: 50%;
+			float: left;
+		}
+		.tienda h1 {
+			color: bisque;
+			text-align: center;
+		}
+		.productos {
+			color: white;
+			float: left;
+			height: 15%;
+			width: 30%;
+			border-radius: 30px;
+			margin: 0;
+			margin-left: 10%;
+			margin-bottom: 5%;
+			text-align: center;
+		}
+		.productos h3{
+			font-family: "Wizards";
+		}
+		.productos button{
+			margin-bottom: 10px;
+			color: red;
+			background-color: grey;
+		}
+		.productos img{
+			width: 200px;
+			height: 200px;
+		}
+		#titulotienda{
+			
+			width: 100%;
+			float: left;
+			margin-top: 100px;
+			color: bisque;
+			text-align: center;
+			font-size: 140%;
 
+		}
 
 	</style>
 </head>
@@ -173,13 +226,13 @@
 				<a href="#">Actores</a>
 			</li>
 			<li>
-				<a href="#">Temporadas</a>
+				<a href="index.html#Temporadas">Temporadas</a>
 			</li>
 			<li>
-				<a href="#">Trailers</a>
+				<a href="index.html#Trailers">Trailers</a>
 			</li>
 			<li>
-				<a href="#">URLS</a>
+				<a href="index.html#tienda">Tienda</a>
 			</li>
 		</ul>
 		<div id="fecha">
@@ -193,18 +246,22 @@
 		<div id="Descripcion">
 			<img src="bandera1.png" id="bandera1">
 			<div id="descden">
-				<h1>Sipnosis</h1>
+				<h1 style="font-family: 'Vintage'">SIPNOSIS</h1>
 				<p>En una tierra donde los veranos duran décadas y los inviernos pueden durar toda una vida, los problemas acechan. Desde las maquinaciones del sur a las salvajes tierras del este, pasando por el helado norte y el milenario Muro que protege el reino de las fuerzas tenebrosas, dos poderosas familias mantienen un enfrentamiento letal por gobernar los Siete Reinos de Poniente. Mientras la traición, la lujuria y las fuerzas sobrenaturales sacuden los pilares de los Reinos, la sangrienta batalla por el Trono de Hierro tendrá consecuencias imprevistas y trascendentales. El invierno se acerca. Que empiece Juego de Tronos.</p>
 			</div>
 			<img src="bandera2.png" id="bandera2">
 		</div>
+		<br>
 		<div id="Temporadas">
-	        <div class="titulo">Temporadas</div>
+	        <div class="titulo">TEMPORADAS</div>
 
 	        <div id="pestanas">
 	            <ul id=lista>
 	                <li id="pestana1"><a href='javascript:cambiarPestanna(pestanas,pestana1);'>Temporada1</a></li>
 	                <li id="pestana2"><a href='javascript:cambiarPestanna(pestanas,pestana2);'>Temporada2</a></li>
+	                <li id="pestana3"><a href='javascript:cambiarPestanna(pestanas,pestana3);'>Temporada3</a></li>
+	                <li id="pestana4"><a href='javascript:cambiarPestanna(pestanas,pestana4);'>Temporada4</a></li>
+	                <li id="pestana5"><a href='javascript:cambiarPestanna(pestanas,pestana5);'>Temporada5</a></li>
 	            </ul>
 	        </div>
 
@@ -216,12 +273,25 @@
 	                <p>Al comienzo de la serie, vemos a Robert Baratheon, Rey de Poniente y antiguo amigo de Ned, llegar a Invernalia para pedir a Ned que se vaya con él a Desembarco del Rey, donde reside junto a su mujer, Cersei Lannister, para convertirse en su consejero.</p>
 	            </div>
 	            <div id="cpestana2">
-	                Contenido de la pestaña 2
+	            	<img src="Temporadas/img2.jpg">
+	                <p>Después del final de primera temporada, la guerra entre familias no ha hecho más que comenzar. En el Norte, Robb Stark se entera de la muerte de su padre Ned por mandato de los Lannister y les declara la guerra. Así, el hijo mayor de los Stark captura a Jaime Lannister, haciéndole prisionero. Pero su madre, Catelyn Stark, decide liberlarle para intercambiarlo por sus hijas, Sansa y Arya.</p>
+	            </div>
+	           	<div id="cpestana3">
+	            	<img src="Temporadas/img3.jpg">
+	                <p>Después de lo sucedido en primera temporada y, sobre todo, la batalla de Aguasnegras, final de la segunda temporada, la guerra por el Trono de Hierro es inminente. Pero no solo tratarán de conquistarlo los vivos... ya que entran en el juego los Caminantes Blancos.</p>
+	            </div>
+	            <div id="cpestana4">
+	            	<img src="Temporadas/img4.jpg">
+	                <p>Después de los eventos de la temporada 3 los Stark están más divididos que nunca. Sansa sigue atrapada en Desembarco del Rey a merced de los Lannister y de Joffrey, que se casa con Margaery Tyrell para mantener una alianza entre las familias. Pero durante el banquete, Joffrey muere envenenado y, en su último aliento, señala a Tyrion, que es acusado del asesinato. Sansa, que observaba sorprendida, huye el lugar gracias a Meñique, que le ayuda a escapar de la ciudad, camino del Nido de Águilas, donde vive la tía de Sansa.</p>
+	            </div>
+	           	<div id="cpestana5">
+	            	<img src="Temporadas/img5.jpg">
+	                <p>En Desembarco del Rey, después de los eventos de la temporada 4 (muerte de Tywin incluida), hay nuevo rey: Tommen, hermano de Joffrey e hijo de Cersei y Jaime Lannister. Para seguir manteniendo la alianza con la casa Tyrell, Tommen se casa con Margaery de la que se enamora. Pero hay un problema: un grupo de fanáticos religiosos conocido como 'Los Gorriones' ha empezado a hacer de las suyas en la ciudad y descubren la relación incestuosa entre Jaime y Cersei, encarcelando a esta última.</p>
 	            </div>
 	    	</div>
 	    </div>
 		<div id="Trailers">
-			<div class="titulo">Trailers</div>
+			<div class="titulo" style="margin-top: 100px">Trailers</div>
 			<br/>
 			<div id="trailer">
 				<div>
@@ -245,18 +315,83 @@
 					<iframe src="https://www.youtube.com/embed/Y0-i5elJlD8"  allowfullscreen></iframe>
 				</div>
 				 <div>
-				 	<h2>Temporada 2</h2>
-				 	<iframe src="https://www.youtube.com/embed/L1yassb83ZU"  allowfullscreen></iframe>
+				 	<h2>Temporada 6</h2>
+				 	<iframe src="https://www.youtube.com/embed/DO7bRDKP0R0"  allowfullscreen></iframe>
 				 </div>
 				 <div>
-				 	<h2>Temporada 3</h2>
-				 	<iframe src="https://www.youtube.com/embed/Y7NgaWZnmW8"  allowfullscreen></iframe>
+				 	<h2>Temporada 7</h2>
+				 	<iframe src="https://www.youtube.com/embed/pyYfc39bzPA"  allowfullscreen></iframe>
 				 </div>
 				 <div>
-				 	<h2>Temporada 4</h2>
-				 	<iframe src="https://www.youtube.com/embed/vAkgYzr_Kig"  allowfullscreen></iframe>
+				 	<h2>Temporada 8</h2>
+				 	<iframe src="https://www.youtube.com/embed/kDIlADvnC_s"  allowfullscreen></iframe>
 				 </div>
- 
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<div id="titulotienda">
+			<h1>TIENDA</h1>
+		</div>
+		<div class="tienda" id="tienda">
+			<div>
+				<h1>Ropa</h1>
+				<br>
+					<div class="productos">
+						<h3>Camiseta Winter Is Coming Blanca</h3>
+						<img src="Merchandising/cami1.png">
+						<p>14'99€</p>
+						<button>Añadir al carrito</button>
+					</div>
+					<div class="productos">
+						<h3>Camiseta Winter Is Coming Negra</h3>
+						<img src="Merchandising/cami2.png">
+						<p>14'99€</p>
+						<button>Añadir al carrito</button>
+					</div>
+					<div class="productos">
+						<h3>Sudadera STARK</h3>
+						<img src="Merchandising/sud1.png">
+						<p>22'99€</p>
+						<button>Añadir al carrito</button>
+					</div>
+					<div class="productos">
+						<h3>Sudadera LANNISTER</h3>
+						<img src="Merchandising/sud2.png">
+						<p>22'99€</p>
+						<button>Añadir al carrito</button>
+					</div>
+			</div>
+		</div>
+		<div class="tienda">
+			<div>
+				<h1>Otros</h1>
+				<br>
+					<div class="productos">
+						<h3>Taza de trono</h3>
+						<img src="Merchandising/taza.jpeg">
+						<p>9'99€</p>
+						<button>Añadir al carrito</button>
+					</div>
+					<div class="productos">
+						<h3>Cuaderno</h3>
+						<img src="Merchandising/cuaderno.png">
+						<p>5'99€</p>
+						<button>Añadir al carrito</button>
+					</div>
+					<div class="productos">
+						<h3>Funda</h3>
+						<img src="Merchandising/funda.png">
+						<p>4'99€</p>
+						<button>Añadir al carrito</button>
+					</div>
+					<div class="productos">
+						<h3>Funko POP</h3>
+						<img src="Merchandising/funko.jpg">
+						<p>9'99€</p>
+						<button>Añadir al carrito</button>
+					</div>
 			</div>
 		</div>
 	</section>

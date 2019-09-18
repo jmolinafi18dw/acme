@@ -19,7 +19,7 @@ function cambiarPestanna(pestannas,pestanna) {
 
     $(document).ready(function(){
         $(cpestanna).css('display','');
-        $(pestanna).css('background','dimgray');
+        $(pestanna).css('background','#2A0303');
         $(pestanna).css('padding-bottom','2px');
     });
 
