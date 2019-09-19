@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>trabajo web</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<script type="text/javascript" src="js/cambiarPestanna.js"></script>
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<header>
+		<a href="https://es.wikipedia.org/wiki/Corporaci%C3%B3n_Acme"><img src="logo.jpg"></a>
+		<ul>
+			<li>
+				<a href="#actoress">Actores</a>
+			</li>
+			<li>
+				<a href="index.html#pestanas">Temporadas</a>
+			</li>
+			<li>
+				<a href="index.html#Trailers">Trailers</a>
+			</li>
+			<li>
+				<a href="index.html#tienda">Tienda</a>
+			</li>
+		</ul>
+		<iframe id="reloj" src="reloj.php"  scrolling="no"></iframe>
+	</header>
+	<section>
+		<div id="Descripcion">
+			<img src="bandera1.png" id="bandera1">
+			<div id="descden">
+				<h1 style="font-family: 'Vintage'">SINOPSIS</h1>
+				<p>En una tierra donde los veranos duran décadas y los inviernos pueden durar toda una vida, los problemas acechan. Desde las maquinaciones del sur a las salvajes tierras del este, pasando por el helado norte y el milenario Muro que protege el reino de las fuerzas tenebrosas, dos poderosas familias mantienen un enfrentamiento letal por gobernar los Siete Reinos de Poniente. Mientras la traición, la lujuria y las fuerzas sobrenaturales sacuden los pilares de los Reinos, la sangrienta batalla por el Trono de Hierro tendrá consecuencias imprevistas y trascendentales. El invierno se acerca. Que empiece Juego de Tronos.</p>
+			</div>
+			<img src="bandera2.png" id="bandera2">
+		</div>
+		<div id="Galeria">
+			<div id="botoncu"><p class="flecha"><</p></div>
+			<div id="divuno">
+				<img id="imagen" src="Actores/1.jpg">
+			</div>
+			<div id="botoncd"><p class="flecha">></p></div>
+		</div>
+		<br>
+		<div id="Temporadas">
+	        <div class="titulo">TEMPORADAS</div>
+
+	        <div id="pestanas">
+	            <ul id=lista>
+	                <li id="pestana1"><a href='javascript:cambiarPestanna(pestanas,pestana1);'>Temporada1</a></li>
+	                <li id="pestana2"><a href='javascript:cambiarPestanna(pestanas,pestana2);'>Temporada2</a></li>
+	                <li id="pestana3"><a href='javascript:cambiarPestanna(pestanas,pestana3);'>Temporada3</a></li>
+	                <li id="pestana4"><a href='javascript:cambiarPestanna(pestanas,pestana4);'>Temporada4</a></li>
+	                <li id="pestana5"><a href='javascript:cambiarPestanna(pestanas,pestana5);'>Temporada5</a></li>
+	            </ul>
+	        </div>
+
+	        <body onload="javascript:cambiarPestanna(pestanas,pestana1);">
+
+	        <div id="contenidopestanas">
+	            <div id="cpestana1">
+	            	<img src="Temporadas/img1.jpg">
+	                <p>Al comienzo de la serie, vemos a Robert Baratheon, Rey de Poniente y antiguo amigo de Ned, llegar a Invernalia para pedir a Ned que se vaya con él a Desembarco del Rey, donde reside junto a su mujer, Cersei Lannister, para convertirse en su consejero.</p>
+	            </div>
+	            <div id="cpestana2">
+	            	<img src="Temporadas/img2.jpg">
+	                <p>Después del final de primera temporada, la guerra entre familias no ha hecho más que comenzar. En el Norte, Robb Stark se entera de la muerte de su padre Ned por mandato de los Lannister y les declara la guerra. Así, el hijo mayor de los Stark captura a Jaime Lannister, haciéndole prisionero. Pero su madre, Catelyn Stark, decide liberlarle para intercambiarlo por sus hijas, Sansa y Arya.</p>
+	            </div>
+	           	<div id="cpestana3">
+	            	<img src="Temporadas/img3.jpg">
+	                <p>Después de lo sucedido en primera temporada y, sobre todo, la batalla de Aguasnegras, final de la segunda temporada, la guerra por el Trono de Hierro es inminente. Pero no solo tratarán de conquistarlo los vivos... ya que entran en el juego los Caminantes Blancos.</p>
+	            </div>
+	            <div id="cpestana4">
+	            	<img src="Temporadas/img4.jpg">
+	                <p>Después de los eventos de la temporada 3 los Stark están más divididos que nunca. Sansa sigue atrapada en Desembarco del Rey a merced de los Lannister y de Joffrey, que se casa con Margaery Tyrell para mantener una alianza entre las familias. Pero durante el banquete, Joffrey muere envenenado y, en su último aliento, señala a Tyrion, que es acusado del asesinato. Sansa, que observaba sorprendida, huye el lugar gracias a Meñique, que le ayuda a escapar de la ciudad, camino del Nido de Águilas, donde vive la tía de Sansa.</p>
+	            </div>
+	           	<div id="cpestana5">
+	            	<img src="Temporadas/img5.jpg">
+	                <p>En Desembarco del Rey, después de los eventos de la temporada 4 (muerte de Tywin incluida), hay nuevo rey: Tommen, hermano de Joffrey e hijo de Cersei y Jaime Lannister. Para seguir manteniendo la alianza con la casa Tyrell, Tommen se casa con Margaery de la que se enamora. Pero hay un problema: un grupo de fanáticos religiosos conocido como 'Los Gorriones' ha empezado a hacer de las suyas en la ciudad y descubren la relación incestuosa entre Jaime y Cersei, encarcelando a esta última.</p>
+	            </div>
+	    	</div>
+	    </div>
+		<div id="Trailers">
+			<div class="titulo" style="margin-top: 100px">Trailers</div>
+			<br/>
+			<div id="trailer">
+				<div>
+					<h2>Temporada 1</h2>
+					<iframe src="https://www.youtube.com/embed/BpJYNVhGf1s"  allowfullscreen></iframe>
+				</div>
+				 <div>
+				 	<h2>Temporada 2</h2>
+				 	<iframe src="https://www.youtube.com/embed/L1yassb83ZU"  allowfullscreen></iframe>
+				 </div>
+				 <div>
+				 	<h2>Temporada 3</h2>
+				 	<iframe src="https://www.youtube.com/embed/Y7NgaWZnmW8"  allowfullscreen></iframe>
+				 </div>
+				 <div>
+				 	<h2>Temporada 4</h2>
+				 	<iframe src="https://www.youtube.com/embed/vAkgYzr_Kig"  allowfullscreen></iframe>
+				 </div>
+				 <div>
+					<h2>Temporada 5</h2>
+					<iframe src="https://www.youtube.com/embed/Y0-i5elJlD8"  allowfullscreen></iframe>
+				</div>
+				 <div>
+				 	<h2>Temporada 6</h2>
+				 	<iframe src="https://www.youtube.com/embed/DO7bRDKP0R0"  allowfullscreen></iframe>
+				 </div>
+				 <div>
+				 	<h2>Temporada 7</h2>
+				 	<iframe src="https://www.youtube.com/embed/pyYfc39bzPA"  allowfullscreen></iframe>
+				 </div>
+				 <div>
+				 	<h2>Temporada 8</h2>
+				 	<iframe src="https://www.youtube.com/embed/kDIlADvnC_s"  allowfullscreen></iframe>
+				 </div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<div id="titulotienda">
+			<h1>TIENDA</h1>
+		</div>
+		<div class="tienda" id="tienda">
+			<div>
+				<h1>Ropa</h1>
+				<br>
+					<div class="productos">
+						<h3>Camiseta Winter Is Coming Blanca</h3>
+						<img src="Merchandising/cami1.png">
+						<p>14'99€</p>
+						<button>Añadir al carrito</button>
+					</div>
+					<div class="productos">
+						<h3>Camiseta Winter Is Coming Negra</h3>
+						<img src="Merchandising/cami2.png">
+						<p>14'99€</p>
+						<button>Añadir al carrito</button>
+					</div>
+					<div class="productos">
+						<h3>Sudadera STARK</h3>
+						<img src="Merchandising/sud1.png">
+						<p>22'99€</p>
+						<button>Añadir al carrito</button>
+					</div>
+					<div class="productos">
+						<h3>Sudadera LANNISTER</h3>
+						<img src="Merchandising/sud2.png">
+						<p>22'99€</p>
+						<button>Añadir al carrito</button>
+					</div>
+			</div>
+		</div>
+		<div class="tienda">
+			<div>
+				<h1>Otros</h1>
+				<br>
+					<div class="productos">
+						<h3>Taza de trono</h3>
+						<img src="Merchandising/taza.jpeg">
+						<p>9'99€</p>
+						<button>Añadir al carrito</button>
+					</div>
+					<div class="productos">
+						<h3>Cuaderno</h3>
+						<img src="Merchandising/cuaderno.png">
+						<p>5'99€</p>
+						<button>Añadir al carrito</button>
+					</div>
+					<div class="productos">
+						<h3>Funda</h3>
+						<img src="Merchandising/funda.png">
+						<p>4'99€</p>
+						<button>Añadir al carrito</button>
+					</div>
+					<div class="productos">
+						<h3>Funko POP</h3>
+						<img src="Merchandising/funko.jpg">
+						<p>9'99€</p>
+						<button>Añadir al carrito</button>
+					</div>
+			</div>
+		</div>
+
+		<div id="titulotienda">
+			<h1><a name="actoress">ACTORES</a></h1>
+		</div>
+
+		<div id="a22">
+
+			<div class="act">
+			<div class="imegenact"><img class="imagenactor" src="Actores/arya.jfif"></div>
+			<h4>Arya Stark</h4>
+			<h5>Maisie Williams</h5>
+			</div>
+
+			<div class="act">
+			<div class="imegenact"><img class="imagenactor" src="Actores/jon.jfif"></div>
+			<h4>Jon Nieve</h4>
+			<h5>Kit Harington</h5>
+			</div>
+
+			<div class="act">
+			<div class="imegenact"><img class="imagenactor" src="Actores/sansa.jfif"></div>
+			<h4>Sansa Stark</h4>
+			<h5>Sophie Turner</h5>
+			</div>
+
+			<div class="act">
+			<div class="imegenact"><img class="imagenactor" src="Actores/cersei.jfif"></div>
+			<h4>Cersei Lannister</h4>
+			<h5>Lena Headey</h5>
+			</div>
+
+			<div class="act">
+			<div class="imegenact"><img class="imagenactor" src="Actores/jaime.jfif"></div>
+			<h4>Jaime Lannister</h4>
+			<h5>Nikolaj Coster</h5>
+			</div>
+
+			<div class="act"> 
+			<div class="imegenact"><img class="imagenactor" src="Actores/tyrion.jfif"></div>
+			<h4>Tyrion Lannister</h4>
+			<h5>Peter Dinklage</h5>
+			</div>
+
+			<div class="act">
+			<div class="imegenact"><img class="imagenactor" src="Actores/brienne.jfif"></div>
+			<h4>Brienne de T</h4>
+			<h5>Gwendoline chistie</h5>
+			</div>
+
+			<div class="act">
+			<div class="imegenact"><img class="imagenactor" src="Actores/bran.jfif"></div>
+			<h4>Bran Stark</h4>
+			<h5>Isaac Hempstead</h5>
+			</div>
+
+			<div class="act">
+			<div class="imegenact"><img class="imagenactor" src="Actores/khal.jfif"></div>
+			<h4>Khal Drogo</h4>
+			<h5>Jason Momoa</h5>
+			</div>
+
+			<div class="act">
+			<div class="imegenact"><img class="imagenactor" src="Actores/margaery.jfif"></div>
+			<h4>Margaery Tyrell</h4>
+			<h5>Natalie Dormer</h5>
+			</div>
+
+		</div>
+		<div id="titulotienda">
+			<h1><a name="noticiass">NOTICIAS</a></h1>
+		</div>
+		<div id="not">
+			<div class="noticia">
+				<div class="im"><img class="frg" src="noticia1.jfif"></div>
+				<div class="tex"><h3>La segunda precuela de ‘Juego de Tronos’ estará basada en los Targaryen</h3></div>
+			</div>
+			<div class="noticia">
+				<div class="im"><img class="frg" src="noticia2.jfif"></div>
+				<div class="tex"><h3>La segunda precuela de 'Juego de tronos' estará centrada en los Targaryen</h3></div>
+			</div>
+			<div class="noticia">
+				<div class="im"><img class="frg" src="noticia3.jfif"></div>
+				<div class="tex"><h3>'Juego de tronos': Gusano Gris no hubiera sido tan amable con Jon Nieve</h3></div>
+			</div>
+			<div class="noticia">
+				<div class="im"><img class="frg" src="noticia4.jfif"></div>
+				<div class="tex"><h3>‘Juego de tronos’: la exposición oficial llega a Madrid el 26 de octubre</h3></div>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<footer>David, Jefry, Andres @2019 Acme</footer>
+	
+
+</body>
+</html>
