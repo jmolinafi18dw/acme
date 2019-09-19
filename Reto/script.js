@@ -62,7 +62,18 @@ var a=0;
 				});
 
 				$(".imagenactor").mouseover(function(event) {
-					$(this).css('opacity','0.2');
+					$(".imagenactor").css('opacity','0.3');
+					$(".imagenactor").css('width','160');
+					$(".imagenactor").css('height','205');
+				});
+				$(".imagenactor").mouseout(function(event) {
+					$(".imagenactor").css('opacity','1');
+					$(".imagenactor").css('width','160');
+					$(".imagenactor").css('height','205');
+				});
+
+				$(".imagenactor").mouseover(function(event) {
+					$(this).css('opacity','1');
 					$(this).css('width','180');
 					$(this).css('height','235');
 				});

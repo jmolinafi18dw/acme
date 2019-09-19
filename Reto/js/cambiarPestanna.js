@@ -23,4 +23,3 @@ function cambiarPestanna(pestannas,pestanna) {
         $(pestanna).css('padding-bottom','2px');
     });
 
-}
