@@ -259,6 +259,7 @@
 			float: left;
 			font-weight:bold;
 			cursor: pointer; 
+			opacity: 0.4;
 		}
 		#botoncd{
 			color: #2A0303;
@@ -271,6 +272,7 @@
 			float: left;
 			font-weight:bold;
 			cursor: pointer;
+			opacity: 0.4;
 		}
 		.flecha{
 			font-size: 120px;
